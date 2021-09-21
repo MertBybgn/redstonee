@@ -1,0 +1,35 @@
+body {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.layout {
+  .navbar {
+    height: 50px;
+    width: 100%;
+    color: #fff;
+
+    margin-bottom: 10px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 230px 1fr 230px;
+    min-height: 100vh;
+    max-width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .sidebar {
+      background: var(--h1-color);
+    }
+    .main {
+      
+      margin: 0 10px;
+      background: var(--primary-color);
+    }
+    .extra {
+      background: var(    --btn-hover-color 
+      );
+    }
+  }
+}

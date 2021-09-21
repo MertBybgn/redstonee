@@ -1,0 +1,47 @@
+.nav {
+  display: flex;
+  justify-content: center;
+
+  .navbtn {
+    margin-right: 10px;
+  }
+}
+
+.navbtn {
+  position: relative;
+  padding: 8px;
+  color: var(--btn-primary-color);
+  text-decoration: none;
+  list-style: none;
+  svg {
+    font-size: 25px;
+
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: var(--btn-primary-color);
+    color: var(--span-color);
+    transition: var(--fade);
+  }
+}
+.navButtonSelected {
+  background-color: var(--btn-primary-color);
+  color: var(--span-color);
+}
+
+.notify {
+  position: absolute;
+  left: 18px;
+  top: 5px;
+  height: 17px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  background-color: var(--btn-hover-color);
+  color: var(--span-color);
+  font-size: 8px;
+  border: 1px solid var(--c-primary);
+}

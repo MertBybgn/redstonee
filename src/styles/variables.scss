@@ -1,0 +1,45 @@
+:root {
+  --primary-color: #165c7d;
+  --h1-color: #fff;
+  --p-color: #fff;
+  --btn-primary-color: #45be93;
+  --btn-warning-color: red;
+  --btn-hover-color: #f27256;
+  --span-color: #fff;
+  --border-color: black;
+  --fade: 620ms;
+}
+.rounded {
+  border-radius: 999px;
+}
+.w-1 {
+  width: 40px;
+}
+
+.w-2 {
+  width: 60px;
+}
+
+.w-3 {
+  width: 80px;
+}
+
+.w-4 {
+  width: 100px;
+}
+
+.h-1 {
+  height: 40px;
+}
+
+.h-2 {
+  height: 60px;
+}
+
+.h-3 {
+  height: 80px;
+}
+
+.h-4 {
+  height: 100px;
+}
