@@ -1,20 +1,14 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
- 
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Example from "../pages/Example";
 import Home from "../pages/Home";
 import Layout from "../pages/Layout";
-import '../styles/reset.scss';
+import "../styles/reset.scss";
+
 function AppRouter() {
   return (
-    
-    <Layout>
-<Router>
-
+    <Router>
+      <Layout>
         <Switch>
           <Route exact path="/">
             <Home />
@@ -24,11 +18,9 @@ function AppRouter() {
             <Example />
           </Route>
         </Switch>
+      </Layout>
     </Router>
-    </Layout>
-  
-  )
+  );
 }
 
-export default AppRouter ;
-
+export default AppRouter;

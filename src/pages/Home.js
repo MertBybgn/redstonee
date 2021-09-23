@@ -1,12 +1,18 @@
-import React from 'react'
+import React from "react";
+import ForwardRef from "../components/ForwardRef/ForwardRef";
 
 const Home = () => {
-    return (
-        <div>
-            home
-home
-        </div>
-    )
-}
+  return (
+    <div>
+      <ForwardRef />
+      <ForwardRef />
+      <ForwardRef />
+      <ForwardRef />
+      <ForwardRef />
 
-export default Home
+      <ForwardRef />
+    </div>
+  );
+};
+
+export default Home;

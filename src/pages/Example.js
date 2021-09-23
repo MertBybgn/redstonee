@@ -2,7 +2,6 @@ import React from "react";
 import Navbtn from "../components/Navigation/Navbtn";
 import { Home } from "../components/icons";
 import Button from "../components/button/Button";
-import Navigation from "../components/Navigation/Navigation";
 import TextTitle from "../components/Text/TextTitle";
 import HeadTitle from "../components/Text/HeadTitle";
 import ForwardRef from "../components/ForwardRef/ForwardRef";
@@ -18,8 +17,6 @@ const Example = () => {
         Save
       </Navbtn>
       <div style={{ height: "50px" }}></div>
-
-      <Navigation />
 
       <div style={{ height: "10px", display: "flex" }}>
         <div>
@@ -57,8 +54,8 @@ const Example = () => {
       <Picture size="xl" rounded />
       <div style={{ height: "200px" }}></div>
       <div style={{ height: "200px" }}></div>
-      <div style={{ height: "200px" }}></div>
       <ForwardRef />
+      <div style={{ height: "200px" }}></div>
     </div>
   );
 };

@@ -1,16 +1,20 @@
 :root {
-  --primary-color: #165c7d;
+  --primary-color: #15202b;
   --h1-color: #fff;
   --p-color: #fff;
   --btn-primary-color: #45be93;
   --btn-warning-color: red;
   --btn-hover-color: #f27256;
   --span-color: #fff;
-  --border-color: black;
+  --border-color: rgb(56, 68, 77);
   --fade: 620ms;
 }
 .rounded {
   border-radius: 999px;
+}
+
+.m-8 {
+  margin: -8px;
 }
 .w-1 {
   width: 40px;
@@ -50,4 +54,70 @@
 
 .text-white {
   color: #fff;
+}
+
+.pl-6 {
+  padding-right: 6px;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.mx-12 {
+  margin: 0px 12px;
+}
+
+.reply-hover {
+  &:hover {
+    transition: var(--fade);
+    color: #00acee;
+    .icons {
+      color: #00acee;
+      background-color: rgba(0, 172, 238, 0.3);
+    }
+  }
+}
+
+.retweet-hover {
+  &:hover {
+    transition: var(--fade);
+    color: var(--btn-primary-color);
+    .icons {
+      color: var(--btn-primary-color);
+      background-color: rgba($color: #45be93, $alpha: 0.3);
+    }
+  }
+}
+
+.like-hover {
+  &:hover {
+    transition: var(--fade);
+    color: #ff3333;
+    .icons {
+      color: #ff3333;
+      background-color: rgba($color: #ff3333, $alpha: 0.3);
+    }
+  }
+}
+
+.share-hover {
+  &:hover {
+    transition: var(--fade);
+    color: #00acee;
+    .icons {
+      color: #00acee;
+      background-color: rgba(0, 172, 238, 0.3);
+    }
+  }
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
 }

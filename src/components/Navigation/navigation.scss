@@ -14,9 +14,9 @@
   text-decoration: none;
   list-style: none;
   svg {
-    font-size: 25px;
+    font-size: 20px;
 
-    margin-right: 10px;
+    margin-right: 8px;
   }
 
   &:hover {
@@ -42,6 +42,6 @@
   align-items: center;
   background-color: var(--btn-hover-color);
   color: var(--span-color);
-  font-size: 8px;
+  font-size: 9px;
   border: 1px solid var(--c-primary);
 }

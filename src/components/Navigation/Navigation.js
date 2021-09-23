@@ -5,13 +5,13 @@ import { useLocation } from "react-router-dom";
 import "./navigation.scss";
 import TextTitle from "../Text/TextTitle";
 const Navigation = () => {
-  const router = useLocation();
+  const router = useLocation().pathname;
 
-  console.log(router.pathname);
+  console.log(router);
   return (
     <nav className="nav">
       {MENU.map((menu) => {
-        const selected = router.pathname === menu.path;
+        const selected = router === menu.path;
 
         return (
           <Navbtn

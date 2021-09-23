@@ -3,6 +3,7 @@ import { Like, Reply, Share, Retweet } from "../icons/index";
 import ForwardImg from "./ForwardImg";
 import TextTitle from "../Text/TextTitle";
 import Picture from "../Avatar/Picture";
+import Iconbtn from "../button/Iconbtn";
 const ForwardRef = ({ children }) => {
   return (
     <article>
@@ -17,7 +18,7 @@ const ForwardRef = ({ children }) => {
           </div>
           <div>
             <div className="info">
-              <div className="text">
+              <div className="info-text">
                 <TextTitle fontSize="base">Mert Baybağan</TextTitle>
                 <TextTitle color="gray" fontSize="sm">
                   @mertbaybagan
@@ -29,41 +30,68 @@ const ForwardRef = ({ children }) => {
                   16h
                 </TextTitle>
               </div>
-              <div>
-                <svg viewBox="0 0 24 24">
-                  <g>
-                    <circle cx="5" cy="12" r="2"></circle>
-                    <circle cx="12" cy="12" r="2"></circle>
-                    <circle cx="19" cy="12" r="2"></circle>
-                  </g>
-                </svg>
+              <div className="m-8 pl-6">
+                <Iconbtn>
+                  <svg viewBox="0 0 24 24">
+                    <g>
+                      <circle cx="5" cy="12" r="2"></circle>
+                      <circle cx="12" cy="12" r="2"></circle>
+                      <circle cx="19" cy="12" r="2"></circle>
+                    </g>
+                  </svg>
+                </Iconbtn>
               </div>
             </div>
+            <div className="text">
+              <TextTitle fontSize="base">
+                Elo, it's been three years, and there is still no news on this
+                matter. There are thousands of Model 3 cars in Turkey, but with
+                no official support. I wonder if you have some concrete
+                information and would like to share it with us :)
+              </TextTitle>
+            </div>
+            <div>
+              <div className="imge">
+                <ForwardImg href="	https://pbs.twimg.com/media/E_6MerKUYBEoIhi?format=jpg&name=small" />
+              </div>
 
-            <TextTitle fontSize="base">
-              Elo, it's been three years, and there is still no news on this
-              matter. There are thousands of Model 3 cars in Turkey, but with no
-              official support. I wonder if you have some concrete information
-              and would like to share it with us :)
-            </TextTitle>
-          </div>
-        </div>
-        <div>
-          <div>
-            <ForwardImg href="https://pbs.twimg.com/media/E_y7xnwVcAU-Q1n?format=jpg&name=small" />
-          </div>
-          <div>
-            <div>
-              <Reply /> <TextTitle>17</TextTitle>
-            </div>
-            <div>
-              <Retweet /> <TextTitle>17</TextTitle>
-            </div>
-            <div>
-              <Like /> <TextTitle>17</TextTitle>
-            </div>
-            <div>
-              <Share /> <TextTitle>17</TextTitle>
+              <div className="media text-gray">
+                <div className="flex reply-hover  justify-center">
+                  <Iconbtn className="text-gray icons ">
+                    <Reply />
+                  </Iconbtn>
+                  <div className="mx-12">
+                    <TextTitle fontSize="sm">17</TextTitle>
+                  </div>
+                </div>
+
+                <div className="flex retweet-hover    justify-center">
+                  <Iconbtn className="text-gray">
+                    <Retweet />
+                  </Iconbtn>
+                  <div className="mx-12">
+                    <TextTitle fontSize="sm">17</TextTitle>
+                  </div>
+                </div>
+
+                <div className="flex  like-hover  justify-center">
+                  <Iconbtn className="text-gray">
+                    <Like />
+                  </Iconbtn>
+                  <div className="mx-12">
+                    <TextTitle fontSize="sm">17</TextTitle>
+                  </div>
+                </div>
+
+                <div className="flex share-hover   justify-center">
+                  <Iconbtn className="text-gray">
+                    <Share />
+                  </Iconbtn>
+                  <div className="mx-12">
+                    <TextTitle fontSize="sm">17</TextTitle>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

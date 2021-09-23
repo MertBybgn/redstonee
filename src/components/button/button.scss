@@ -11,3 +11,15 @@
 .full {
   width: 100%;
 }
+
+.icons {
+  padding: 4px;
+
+  svg {
+    font-size: 18px;
+  }
+
+  &:hover {
+    transition: var(--fade);
+  }
+}

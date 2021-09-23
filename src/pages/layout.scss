@@ -2,34 +2,30 @@ body {
   background: var(--primary-color);
   color: #fff;
 }
-
-.layout {
-  .navbar {
-    height: 50px;
-    width: 100%;
-    color: #fff;
-
-    margin-bottom: 10px;
+.navbar {
+  .header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
+}
+.layout {
   .grid {
     display: grid;
-    grid-template-columns: 230px 1fr 230px;
+    grid-template-columns: 336.39px 1fr 336px;
     min-height: 100vh;
-    max-width: 1270px;
-    margin-left: auto;
-    margin-right: auto;
 
     .sidebar {
       background: var(--h1-color);
     }
     .main {
-      
-      margin: 0 10px;
+      padding: 0 10px;
+      min-width: 597.22px;
       background: var(--primary-color);
     }
     .extra {
-      background: var(    --btn-hover-color 
-      );
+      background: var(--btn-hover-color);
     }
   }
 }

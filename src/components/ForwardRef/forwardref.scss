@@ -1,6 +1,9 @@
 .content-forwardRef {
   padding: 10px;
-  border: 1px solid #fff;
+  width: 575px;
+  border: 1px solid;
+  border-color: var(--border-color);
+
   .who-reply {
     padding-left: 20px;
     font-size: 13px;
@@ -15,17 +18,21 @@
     margin-top: 10px;
     display: flex;
 
+    .text {
+      width: 503px;
+      overflow-wrap: break-word;
+    }
+
     .profil-box {
-      margin-right: 7px;
+      margin-right: 12px;
     }
 
     .info {
       display: flex;
-      gap: 7px;
+      margin-bottom: 10px;
       justify-content: space-between;
-      .text {
-        display: flex;
-        gap: 3px;
+      .info-text {
+        display: inline;
       }
 
       svg {
@@ -34,13 +41,27 @@
         color: #fff;
       }
     }
+
+    .media {
+      margin-top: 10px;
+      max-width: 425px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .social {
+        svg {
+          font-size: 18px;
+        }
+      }
+    }
   }
 }
 
 .imge {
   width: 503px;
-
+  margin-top: 10px;
   .img {
+    border-radius: 16px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
