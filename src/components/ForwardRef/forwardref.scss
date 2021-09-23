@@ -1,0 +1,50 @@
+.content-forwardRef {
+  padding: 10px;
+  border: 1px solid #fff;
+  .who-reply {
+    padding-left: 20px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+    .icon {
+      margin-right: 10px;
+    }
+  }
+  .content {
+    margin-top: 10px;
+    display: flex;
+
+    .profil-box {
+      margin-right: 7px;
+    }
+
+    .info {
+      display: flex;
+      gap: 7px;
+      justify-content: space-between;
+      .text {
+        display: flex;
+        gap: 3px;
+      }
+
+      svg {
+        width: 18px;
+        height: 18px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.imge {
+  width: 503px;
+
+  .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+}

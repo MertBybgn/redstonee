@@ -13,12 +13,28 @@ const style = {
     xl: "text-xl",
     xxl: "text-xxl",
   },
+  color: {
+    gray: "text-gray",
+    white: "text-white",
+  },
 };
 
-const TextTitle = ({ children, fontSize, bold, className, ...props }) => {
+const TextTitle = ({
+  children,
+  fontSize,
+  bold,
+  color,
+  className,
+  ...props
+}) => {
   return (
     <span
-      className={cn(style.font[fontSize], bold && "bold", className)}
+      className={cn(
+        style.font[fontSize],
+        style.color[color],
+        bold && "bold",
+        className
+      )}
       {...props}
     >
       {children}
@@ -26,4 +42,7 @@ const TextTitle = ({ children, fontSize, bold, className, ...props }) => {
   );
 };
 
+TextTitle.defaultProps = {
+  fontSize: "base",
+};
 export default TextTitle;

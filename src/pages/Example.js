@@ -5,6 +5,7 @@ import Button from "../components/button/Button";
 import Navigation from "../components/Navigation/Navigation";
 import TextTitle from "../components/Text/TextTitle";
 import HeadTitle from "../components/Text/HeadTitle";
+import ForwardRef from "../components/ForwardRef/ForwardRef";
 import Picture from "../components/Avatar/Picture";
 const Example = () => {
   return (
@@ -32,7 +33,7 @@ const Example = () => {
           <TextTitle fontSize="lg"> Helo Words </TextTitle>
 
           <TextTitle fontSize="xl" bold>
-            Helo Worddds
+            Helo Words
           </TextTitle>
         </div>
         <div>
@@ -54,6 +55,10 @@ const Example = () => {
       <Picture size="base" rounded />
       <Picture size="lg" rounded />
       <Picture size="xl" rounded />
+      <div style={{ height: "200px" }}></div>
+      <div style={{ height: "200px" }}></div>
+      <div style={{ height: "200px" }}></div>
+      <ForwardRef />
     </div>
   );
 };
